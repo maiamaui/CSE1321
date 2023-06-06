@@ -1,0 +1,45 @@
+using System;
+
+namespace Assignment1A
+{ 
+    public class Assignment1A
+    {
+        public static void Main(String[] args)
+        {
+            int red = 0;
+            int green = 0;
+            int blue = 0;
+            int redInverted = 0;
+            int greenInverted = 0;
+            int blueInverted = 0;
+            float redFloating = 0f;
+            float greenFloating = 0f;
+            float blueFloating = 0f;
+
+            Console.WriteLine("Hi! Welcome to Color Inverter by Maia");
+
+            Console.WriteLine("Please enter a red RGB value (0-255):");
+            red = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Please enter a green RGB value (0-255):");
+            green = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Please enter a blue RGB value (0-255):");
+            blue = Convert.ToInt32(Console.ReadLine());
+
+            redInverted = 255 - red;
+            greenInverted = 255 - green;
+            blueInverted = 255 - blue;
+
+            Console.WriteLine("The inverted colors are: red=" + redInverted + " green=" + greenInverted + " blue=" + blueInverted + ".");
+
+            redFloating = (float)redInverted / 255;
+            greenFloating = (float)greenInverted / 255;
+            blueFloating = (float)blueInverted / 255;
+
+            Console.WriteLine("With floating point numbers, that would be red=" + redFloating + " green=" + greenFloating + " blue=" + blueFloating + ".");
+
+        }
+    }
+}
+  
